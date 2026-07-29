@@ -416,19 +416,19 @@ export default function App() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-xs sm:text-sm md:text-base font-semibold text-slate-700 w-full">
               <div className="flex items-center justify-start gap-2 sm:gap-2.5">
                 <Globe className="w-5 h-5 sm:w-6 sm:h-6 text-brand-purple shrink-0 stroke-[2.2]" />
-                <span className="whitespace-nowrap">Internationally Accredited</span>
+                <span className="whitespace-nowrap text-[11px] sm:text-sm md:text-base">Internationally Accredited</span>
               </div>
               <div className="flex items-center justify-start gap-2 sm:gap-2.5">
                 <Award className="w-5 h-5 sm:w-6 sm:h-6 text-brand-teal shrink-0 stroke-[2.2]" />
-                <span className="whitespace-nowrap">Award-Winning Program</span>
+                <span className="whitespace-nowrap text-[11px] sm:text-sm md:text-base">Award-Winning Program</span>
               </div>
               <div className="flex items-center justify-start gap-2 sm:gap-2.5">
                 <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-amber-500 shrink-0 stroke-[2.2]" />
-                <span className="whitespace-nowrap">20+ Years Experience</span>
+                <span className="whitespace-nowrap text-[11px] sm:text-sm md:text-base">20+ Years Experience</span>
               </div>
               <div className="flex items-center justify-start gap-2 sm:gap-2.5">
                 <Users className="w-5 h-5 sm:w-6 sm:h-6 text-brand-purple shrink-0 stroke-[2.2]" />
-                <span className="whitespace-nowrap">Trusted by Local Families</span>
+                <span className="whitespace-nowrap text-[11px] sm:text-sm md:text-base">Trusted by Local Families</span>
               </div>
             </div>
           </div>
@@ -544,9 +544,11 @@ export default function App() {
         className="bg-white py-6 text-center relative overflow-hidden"
       >
         <h2 
-          className="text-2xl sm:text-3xl md:text-4xl font-bold font-display text-slate-900 px-4"
+          className="text-[30px] sm:text-3xl md:text-4xl font-bold font-display text-slate-900 px-4"
         >
-          See What a Real <span className="text-brand-purple">Kindermusik Class</span> Looks Like
+          See What a Real <br className="block sm:hidden" />
+          <span className="text-brand-purple">Kindermusik Class</span> <br className="block sm:hidden" />
+          Looks Like
         </h2>
       </div>
 
@@ -747,17 +749,19 @@ export default function App() {
               <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 leading-tight tracking-tight">
                 Does This <span className="text-brand-purple">Sound Familiar?</span>
               </h2>
-              <p className="text-slate-600 font-medium text-center text-sm md:text-base mt-2">
+              <p className="text-slate-600 font-medium text-center text-[15px] sm:text-sm md:text-base mt-2">
                 Many parents come to us with these same concerns.
               </p>
             </div>
 
             {/* Cards container */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8 justify-center">
-              {STRUGGLES.map((struggle) => (
+            <div className="grid grid-cols-2 sm:grid-cols-6 lg:grid-cols-5 gap-6 lg:gap-8 justify-center">
+              {STRUGGLES.map((struggle, index) => (
                 <div 
                   key={struggle.id} 
-                  className="flex flex-col items-center group relative"
+                  className={`flex flex-col items-center group relative sm:col-span-2 lg:col-span-1 lg:col-start-auto ${
+                    index === 3 ? 'sm:col-start-2' : ''
+                  } last:col-span-2 sm:last:col-span-2 lg:last:col-span-1 last:max-w-[calc(50%-12px)] sm:last:max-w-none last:w-full last:mx-auto`}
                 >
                   {/* Relative wrapper allowing badge to overflow beyond card boundaries */}
                   <div className="relative w-full aspect-square transition-transform duration-300 group-hover:-translate-y-[6px]">
@@ -778,12 +782,11 @@ export default function App() {
 
                   {/* Centered label & short supporting sentence under the card */}
                   <h3 
-                    className="font-bold text-slate-900 text-xs sm:text-sm font-display text-center mt-3 max-w-[170px] leading-snug"
-                    style={{ fontSize: '16px' }}
+                    className="font-bold text-slate-900 text-[14px] sm:text-[16px] font-display text-center mt-3 max-w-[170px] leading-snug"
                   >
                     {struggle.title}
                   </h3>
-                  <p className="text-slate-500 text-xs font-normal text-center mt-1 max-w-[170px] leading-tight">
+                  <p className="text-slate-500 text-[10px] sm:text-xs font-normal text-center mt-1 max-w-[170px] leading-tight">
                     {struggle.description}
                   </p>
                 </div>
@@ -826,22 +829,22 @@ export default function App() {
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 leading-tight tracking-tight max-w-[801px] mx-auto">
               More Than Music. <span className="text-brand-purple">A Foundation For Life.</span>
             </h2>
-            <p className="text-slate-600 font-medium text-sm md:text-base mt-2">
+            <p className="text-slate-600 font-medium text-[16px] sm:text-sm md:text-base mt-2">
               Every Kindermusik activity is thoughtfully designed to nurture every area of your child's development.
             </p>
           </div>
 
           {/* Row of 5 circular badges */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-y-10 gap-x-6 md:gap-x-8 justify-between items-start w-full mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-6 md:grid-cols-5 gap-y-10 gap-x-6 md:gap-x-8 justify-between items-start w-full mx-auto">
             {/* Music Sparks Joy */}
-            <div className="flex flex-col items-center text-center">
+            <div className="flex flex-col items-center text-center sm:col-span-2 md:col-span-1">
               <div className="w-24 h-24 md:w-28 md:h-28 rounded-full flex items-center justify-center mb-4 bg-[#ECE7FF] transition-transform duration-300 hover:scale-105 shadow-sm">
                 <Music className="w-10 h-10 md:w-12 md:h-12 text-[#6340C1]" strokeWidth={2.2} />
               </div>
-              <span className="font-extrabold text-slate-900 text-[14px] md:text-[16px] leading-[1.3] font-sans" style={{ fontSize: '18px' }}>
+              <span className="font-extrabold text-slate-900 text-[16px] sm:text-[18px] leading-[1.3] font-sans">
                 Music
               </span>
-              <span className="font-extrabold text-slate-900 text-[14px] md:text-[16px] leading-[1.3] font-sans" style={{ fontSize: '18px' }}>
+              <span className="font-extrabold text-slate-900 text-[16px] sm:text-[18px] leading-[1.3] font-sans">
                 Sparks Joy
               </span>
               <span className="font-medium text-slate-500 leading-snug font-sans max-w-[150px] mt-1" style={{ fontSize: '13px' }}>
@@ -850,14 +853,14 @@ export default function App() {
             </div>
 
             {/* Movement Builds Confidence */}
-            <div className="flex flex-col items-center text-center">
+            <div className="flex flex-col items-center text-center sm:col-span-2 md:col-span-1">
               <div className="w-24 h-24 md:w-28 md:h-28 rounded-full flex items-center justify-center mb-4 bg-[#FEF3D1] transition-transform duration-300 hover:scale-105 shadow-sm">
                 <Flame className="w-10 h-10 md:w-12 md:h-12 text-[#FFA000]" strokeWidth={2.2} />
               </div>
-              <span className="font-extrabold text-slate-900 text-[14px] md:text-[16px] leading-[1.3] font-sans" style={{ fontSize: '18px' }}>
+              <span className="font-extrabold text-slate-900 text-[16px] sm:text-[18px] leading-[1.3] font-sans">
                 Movement
               </span>
-              <span className="font-extrabold text-slate-900 text-[14px] md:text-[16px] leading-[1.3] font-sans" style={{ fontSize: '18px' }}>
+              <span className="font-extrabold text-slate-900 text-[16px] sm:text-[18px] leading-[1.3] font-sans">
                 Builds Confidence
               </span>
               <span className="font-medium text-slate-500 leading-snug font-sans max-w-[150px] mt-1" style={{ fontSize: '13px' }}>
@@ -866,14 +869,14 @@ export default function App() {
             </div>
 
             {/* Connection Creates Belonging */}
-            <div className="flex flex-col items-center text-center">
+            <div className="flex flex-col items-center text-center sm:col-span-2 md:col-span-1">
               <div className="w-24 h-24 md:w-28 md:h-28 rounded-full flex items-center justify-center mb-4 bg-[#E0F4F0] transition-transform duration-300 hover:scale-105 shadow-sm">
                 <Users className="w-10 h-10 md:w-12 md:h-12 text-[#009E83]" strokeWidth={2.2} />
               </div>
-              <span className="font-extrabold text-slate-900 text-[14px] md:text-[16px] leading-[1.3] font-sans" style={{ fontSize: '18px' }}>
+              <span className="font-extrabold text-slate-900 text-[16px] sm:text-[18px] leading-[1.3] font-sans">
                 Connection
               </span>
-              <span className="font-extrabold text-slate-900 text-[14px] md:text-[16px] leading-[1.3] font-sans" style={{ fontSize: '18px' }}>
+              <span className="font-extrabold text-slate-900 text-[16px] sm:text-[18px] leading-[1.3] font-sans">
                 Creates Belonging
               </span>
               <span className="font-medium text-slate-500 leading-snug font-sans mt-1" style={{ fontSize: '13px', width: '156px' }}>
@@ -882,14 +885,14 @@ export default function App() {
             </div>
 
             {/* Emotional Development */}
-            <div className="flex flex-col items-center text-center">
+            <div className="flex flex-col items-center text-center sm:col-span-2 sm:col-start-2 md:col-span-1 md:col-start-auto">
               <div className="w-24 h-24 md:w-28 md:h-28 rounded-full flex items-center justify-center mb-4 bg-[#FFE6EC] transition-transform duration-300 hover:scale-105 shadow-sm">
                 <Heart className="w-10 h-10 md:w-12 md:h-12 text-slate-900 fill-[#FF4B72]" strokeWidth={2.2} />
               </div>
-              <span className="font-extrabold text-slate-900 text-[14px] md:text-[16px] leading-[1.3] font-sans" style={{ fontSize: '18px' }}>
+              <span className="font-extrabold text-slate-900 text-[16px] sm:text-[18px] leading-[1.3] font-sans">
                 Emotional
               </span>
-              <span className="font-extrabold text-slate-900 text-[14px] md:text-[16px] leading-[1.3] font-sans" style={{ fontSize: '18px' }}>
+              <span className="font-extrabold text-slate-900 text-[16px] sm:text-[18px] leading-[1.3] font-sans">
                 Development
               </span>
               <span className="font-medium text-slate-500 leading-snug font-sans mt-1" style={{ fontSize: '13px', width: '175px' }}>
@@ -898,14 +901,14 @@ export default function App() {
             </div>
 
             {/* Cognitive Growth */}
-            <div className="flex flex-col items-center text-center">
+            <div className="flex flex-col items-center text-center col-span-2 sm:col-span-2 md:col-span-1">
               <div className="w-24 h-24 md:w-28 md:h-28 rounded-full flex items-center justify-center mb-4 bg-[#EFEBF9] transition-transform duration-300 hover:scale-105 shadow-sm">
                 <Brain className="w-10 h-10 md:w-12 md:h-12 text-[#8257E5]" strokeWidth={2.2} />
               </div>
-              <span className="font-extrabold text-slate-900 text-[14px] md:text-[16px] leading-[1.3] font-sans" style={{ fontSize: '18px' }}>
+              <span className="font-extrabold text-slate-900 text-[16px] sm:text-[18px] leading-[1.3] font-sans">
                 Cognitive
               </span>
-              <span className="font-extrabold text-slate-900 text-[14px] md:text-[16px] leading-[1.3] font-sans" style={{ fontSize: '18px' }}>
+              <span className="font-extrabold text-slate-900 text-[16px] sm:text-[18px] leading-[1.3] font-sans">
                 Growth
               </span>
               <span className="font-medium text-slate-500 leading-snug font-sans max-w-[150px] mt-1" style={{ fontSize: '13px' }}>
@@ -976,13 +979,13 @@ export default function App() {
 
                     {/* Perfect For */}
                     {prog.perfectFor && (
-                      <div className="w-full pt-3 mt-1 border-t border-slate-900/10 text-left">
-                        <span className="text-[11px] font-bold tracking-wider uppercase text-slate-500 block mb-1.5">
+                      <div className="w-full pt-3 mt-1 border-t border-slate-900/10 text-center flex flex-col items-center text-xs sm:text-[16px] md:text-xs">
+                        <span className="text-[11px] font-bold tracking-wider uppercase text-slate-500 block mb-1.5 text-center">
                           Perfect For
                         </span>
-                        <ul className="space-y-1 text-xs text-slate-700 font-medium">
+                        <ul className="space-y-1 text-xs text-slate-700 font-medium flex flex-col items-center">
                           {prog.perfectFor.map((item, idx) => (
-                            <li key={idx} className="flex items-start gap-1.5 leading-snug">
+                            <li key={idx} className="flex items-center justify-center gap-1.5 leading-snug text-center">
                               <span className="text-slate-400 font-bold">•</span>
                               <span>{item}</span>
                             </li>
@@ -1026,10 +1029,12 @@ export default function App() {
             
             {/* Title 1: Moments from our class */}
             <div className="text-center max-w-[800px] mx-auto mb-10">
-              <h2 className="text-3xl md:text-[40px] font-bold font-display text-slate-900 leading-tight mx-auto" style={{ width: '800px', maxWidth: '100%' }}>
-                Real Moments. Real Smiles. <span className="text-brand-purple">Real Growth.</span>
+              <h2 className="text-[30px] sm:text-3xl md:text-[40px] font-bold font-display text-slate-900 leading-tight mx-auto" style={{ width: '800px', maxWidth: '100%' }}>
+                Real Moments. <br className="block sm:hidden" />
+                Real Smiles. <br className="block sm:hidden" />
+                <span className="text-brand-purple">Real Growth.</span>
               </h2>
-              <p className="text-slate-600 text-sm font-medium leading-relaxed mt-2.5 mx-auto" style={{ fontSize: '14px', width: '675px', maxWidth: '100%' }}>
+              <p className="text-slate-600 text-sm sm:text-[16px] md:text-sm font-medium leading-relaxed mt-2.5 mx-auto" style={{ width: '675px', maxWidth: '100%' }}>
                 Real classroom moments filled with music, movement, smiles, and meaningful learning experiences.
               </p>
             </div>
@@ -1070,26 +1075,26 @@ export default function App() {
               <h2 className="text-3xl md:text-[40px] font-bold font-display text-slate-900 leading-tight" style={{ paddingTop: '38px' }}>
                 Explore <span className="text-brand-purple">our learning spaces</span>
               </h2>
-              <p className="text-slate-600 text-sm font-medium leading-relaxed mt-3" style={{ fontSize: '14px' }}>
+              <p className="text-slate-600 text-sm sm:text-[16px] md:text-sm font-medium leading-relaxed mt-3">
                 Safe, clean, and thoughtfully designed spaces where children feel comfortable learning and exploring.
               </p>
 
               {/* Four small feature icons above room photos */}
-              <div className="flex flex-wrap items-center justify-center gap-x-5 sm:gap-x-8 gap-y-2 text-xs sm:text-sm font-semibold text-slate-700 mt-5">
-                <div className="flex items-center gap-1.5">
-                  <ShieldCheck className="w-4 h-4 text-brand-purple shrink-0 stroke-[2.2]" />
+              <div className="flex items-center justify-center gap-2.5 sm:gap-8 text-[11px] sm:text-sm font-semibold text-slate-700 mt-5 whitespace-nowrap">
+                <div className="flex items-center gap-1">
+                  <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-brand-purple shrink-0 stroke-[2.2]" />
                   <span>Safe</span>
                 </div>
-                <div className="flex items-center gap-1.5">
-                  <Sparkles className="w-4 h-4 text-brand-teal shrink-0 stroke-[2.2]" />
+                <div className="flex items-center gap-1">
+                  <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-brand-teal shrink-0 stroke-[2.2]" />
                   <span>Clean</span>
                 </div>
-                <div className="flex items-center gap-1.5">
-                  <Heart className="w-4 h-4 text-brand-pink fill-brand-pink/20 shrink-0 stroke-[2.2]" />
+                <div className="flex items-center gap-1">
+                  <Heart className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-brand-pink fill-brand-pink/20 shrink-0 stroke-[2.2]" />
                   <span>Child-Friendly</span>
                 </div>
-                <div className="flex items-center gap-1.5">
-                  <Award className="w-4 h-4 text-amber-500 shrink-0 stroke-[2.2]" />
+                <div className="flex items-center gap-1">
+                  <Award className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-500 shrink-0 stroke-[2.2]" />
                   <span>Purpose-Built</span>
                 </div>
               </div>
@@ -1133,7 +1138,7 @@ export default function App() {
             <h2 className="text-3xl md:text-[40px] font-bold text-slate-900 leading-tight font-display text-center">
               Loved by Families. <span className="text-brand-purple">Proven Results.</span>
             </h2>
-            <p className="text-slate-600 text-sm md:text-base max-w-[700px] mx-auto font-medium leading-relaxed text-center">
+            <p className="text-slate-600 text-[13px] sm:text-sm md:text-base max-w-[700px] mx-auto font-medium leading-relaxed text-center">
               Real stories from real families who’ve experienced the Kindermusik with Agape difference.
             </p>
           </div>
@@ -1260,10 +1265,10 @@ export default function App() {
 
                 {/* Bio description */}
                 <div className="space-y-3.5 pt-3 border-t border-slate-100">
-                  <p className="text-slate-600 text-sm md:text-[15px] leading-relaxed font-medium max-w-xl">
+                  <p className="text-slate-600 text-[17px] sm:text-sm md:text-[15px] leading-relaxed font-medium max-w-xl">
                     With over 20 years of experience in music education and working with children and families, Ms Clarice leads the educational vision of Kindermusik with Agape.
                   </p>
-                  <p className="text-slate-600 text-sm md:text-[15px] leading-relaxed font-medium max-w-xl">
+                  <p className="text-slate-600 text-[17px] sm:text-sm md:text-[15px] leading-relaxed font-medium max-w-xl">
                     Her passion is to nurture <strong className="font-bold text-slate-800">every child's potential</strong> through the <strong className="font-bold text-slate-800">joy of music</strong>, movement, and meaningful connections.
                   </p>
                 </div>
@@ -1368,7 +1373,7 @@ export default function App() {
             <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold font-display text-slate-900 leading-tight tracking-tight">
               Everything <span className="text-brand-purple">Parents Want to Know</span>
             </h2>
-            <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed pt-1">
+            <p className="text-slate-600 text-base sm:text-[17px] md:text-lg max-w-2xl mx-auto leading-relaxed pt-1">
               Choosing the right programme for your child is an important decision.<br className="hidden sm:inline" /> Here are answers to the questions parents ask us most before booking a trial class.
             </p>
           </div>
@@ -1451,24 +1456,24 @@ export default function App() {
           </div>
 
           <div className="max-w-5xl mx-auto relative z-10">
-            <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-[42px] xl:text-[46px] font-bold font-display leading-tight mb-3 whitespace-nowrap">
+            <h2 className="text-[29px] sm:text-3xl md:text-4xl lg:text-[42px] xl:text-[46px] font-bold font-display leading-tight mb-3 whitespace-normal sm:whitespace-nowrap">
               Let's Make Music Part Of Your Child's Journey
             </h2>
-            <p className="text-purple-100 text-[17px] max-w-[692px] mx-auto leading-relaxed mb-8">
+            <p className="text-purple-100 text-base sm:text-[17px] max-w-[692px] mx-auto leading-relaxed mb-8 px-2 sm:px-0">
               Join thousands of families who have discovered the joy of learning through music. Book your free trial class today.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-2">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-2 px-4 sm:px-0">
               <button 
                 onClick={() => setIsBookingModalOpen(true)}
-                className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-8 py-4 text-xs font-bold text-brand-purple bg-white hover:bg-purple-50 rounded-full shadow-lg transition-all cursor-pointer"
+                className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-8 py-4 text-xs sm:text-sm font-bold text-brand-purple bg-white hover:bg-purple-50 rounded-full shadow-lg transition-all cursor-pointer"
               >
                 <Calendar className="w-4 h-4" />
                 Book a Free Trial Class
               </button>
               <button 
                 onClick={handleWhatsAppClick}
-                className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-8 py-4 text-xs font-bold text-white bg-brand-green hover:bg-brand-green-hover rounded-full shadow-lg transition-all cursor-pointer"
+                className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-8 py-4 text-xs sm:text-sm font-bold text-white bg-brand-green hover:bg-brand-green-hover rounded-full shadow-lg transition-all cursor-pointer"
               >
                 <MessageSquare className="w-4 h-4 fill-white text-brand-green" />
                 WhatsApp Us
@@ -1476,11 +1481,11 @@ export default function App() {
             </div>
 
             {/* Social Proof & Trust Badges Below CTA */}
-            <div className="mt-6 space-y-1.5 text-center">
+            <div className="mt-6 space-y-1.5 text-center px-4 sm:px-0">
               <p className="text-amber-300 font-extrabold text-sm sm:text-base tracking-wide">
                 ★★★★★ <span className="text-white font-semibold ml-1">Loved by Hundreds of Families</span>
               </p>
-              <p className="text-purple-100 text-xs sm:text-sm font-medium opacity-90">
+              <p className="text-purple-100 text-xs sm:text-sm font-medium opacity-90 leading-relaxed sm:leading-normal">
                 Internationally Accredited • Award-Winning Program • 20+ Years Experience
               </p>
             </div>
