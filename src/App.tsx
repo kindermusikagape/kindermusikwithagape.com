@@ -1263,10 +1263,10 @@ export default function App() {
 
                 {/* Bio description */}
                 <div className="space-y-3.5 pt-3 border-t border-slate-100">
-                  <p className="text-slate-600 text-[17px] sm:text-sm md:text-[15px] leading-relaxed font-medium max-w-xl">
+                  <p className="text-slate-600 text-[16px] sm:text-sm md:text-[15px] leading-relaxed font-medium max-w-xl">
                     With over 20 years of experience in music education and working with children and families, Ms Clarice leads the educational vision of Kindermusik with Agape.
                   </p>
-                  <p className="text-slate-600 text-[17px] sm:text-sm md:text-[15px] leading-relaxed font-medium max-w-xl">
+                  <p className="text-slate-600 text-[16px] sm:text-sm md:text-[15px] leading-relaxed font-medium max-w-xl">
                     Her passion is to nurture <strong className="font-bold text-slate-800">every child's potential</strong> through the <strong className="font-bold text-slate-800">joy of music</strong>, movement, and meaningful connections.
                   </p>
                 </div>
@@ -1288,7 +1288,7 @@ export default function App() {
                 <div className="flex-1 h-[1.5px] bg-[#E1D8F5]/70 opacity-80" />
               </div>
 
-              <p className="text-[#6B7280] font-medium text-[16px] text-center max-w-[620px] mx-auto px-4 leading-relaxed pt-1">
+              <p className="text-[#6B7280] font-medium text-[15px] sm:text-[16px] text-center max-w-[620px] mx-auto px-4 leading-relaxed pt-1">
                 Our passionate educators create a safe, joyful, and engaging environment where every child can learn, grow, and thrive.
               </p>
             </div>
@@ -1298,7 +1298,9 @@ export default function App() {
               {OTHER_TEACHERS.map((teacher, index) => (
                 <div 
                   key={teacher.id} 
-                  className="bg-white rounded-[32px] p-6 sm:p-7 shadow-sm hover:shadow-xl hover:shadow-purple-900/5 hover:-translate-y-[8px] transition-all duration-250 ease-out flex flex-col items-center text-center relative overflow-hidden group border border-purple-50 h-full justify-between"
+                  className={`bg-white rounded-[32px] p-6 sm:p-7 shadow-sm hover:shadow-xl hover:shadow-purple-900/5 hover:-translate-y-[8px] transition-all duration-250 ease-out flex flex-col items-center text-center relative overflow-hidden group border border-purple-50 h-full justify-between ${
+                    teacher.id === 'ot1' ? 'order-2 lg:order-1' : teacher.id === 'ot2' ? 'order-1 lg:order-2' : 'order-3 lg:order-3'
+                  }`}
                 >
                   <div className="flex flex-col items-center shrink-0 w-full">
                     {/* Portrait */}
@@ -1445,14 +1447,6 @@ export default function App() {
         className="py-16 sm:py-20 bg-brand-purple relative text-white text-center overflow-hidden"
       >
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col justify-center">
-          {/* Playful floating shapes aligned with section bounds */}
-          <div className="absolute top-2 left-4 sm:left-6 lg:left-8 w-14 h-14 opacity-25 pointer-events-none">
-            <MusicNoteDoodle color="stroke-white fill-white/10" />
-          </div>
-          <div className="absolute bottom-2 right-4 sm:right-6 lg:right-8 w-14 h-14 opacity-25 pointer-events-none">
-            <StarDoodle color="stroke-white fill-white/15" />
-          </div>
-
           <div className="max-w-5xl mx-auto relative z-10">
             <h2 className="text-[29px] sm:text-3xl md:text-4xl lg:text-[42px] xl:text-[46px] font-bold font-display leading-tight mb-3 whitespace-normal sm:whitespace-nowrap">
               Let's Make Music Part Of Your Child's Journey
