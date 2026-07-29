@@ -22,16 +22,16 @@ export const TrialBookingModal: React.FC<TrialBookingModalProps> = ({ isOpen, on
   };
 
   const handleOpenWhatsApp = () => {
-    // Generate the WhatsApp text based on form input
-    const message = `Hello Kindermusik with Agape! 🎵 I would like to book a Free Trial Class.
+    // Generate the WhatsApp text based on form input without emojis
+    const message = `Hello Kindermusik with Agape! I would like to book a Free Trial Class.
 
-👨‍👩‍👦 Parent Name: ${parentName}
-👶 Child Name: ${childName}
-🎂 Child Age: ${childAge}
-🎨 Selected Program: ${selectedProgram}
-🗓️ Preferred Date: ${preferredDate}
+Parent Name: ${parentName}
+Child Name: ${childName}
+Child Age: ${childAge}
+Selected Program: ${selectedProgram}
+Preferred Date: ${preferredDate}
 
-Looking forward to experiencing the joy of music together! 😊`;
+Looking forward to experiencing the joy of music together!`;
 
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/60195721205?text=${encodedMessage}`;

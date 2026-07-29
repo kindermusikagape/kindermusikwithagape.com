@@ -160,8 +160,8 @@ export default function App() {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const encodedMsg = encodeURIComponent("Hello Kindermusik with Agape! 🎵 I saw your website and would like to find out more about your music and movement classes.");
-    window.open(`https://wa.me/60195721205?text=${encodedMsg}`, '_blank', 'noopener,noreferrer');
+    const text = "Hello Kindermusik with Agape!\n\nI found your website and I'm interested in your music and movement classes for my child.\n\nCould you please share more information about the classes, schedule and free trial session? Thank you!";
+    window.open(`https://wa.me/60195721205?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
   };
 
   // Helper to resolve benefit icons dynamically
@@ -1559,10 +1559,10 @@ export default function App() {
                   +6019 572 1205
                 </p>
                 <div className="flex gap-3">
-                  <a href="#" className="hover:text-yellow-300 transition-all p-1.5 bg-white/10 rounded-full">
+                  <a href="https://www.facebook.com/KindermusikwithAgape" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-300 transition-all p-1.5 bg-white/10 rounded-full">
                     <Facebook className="w-4 h-4" />
                   </a>
-                  <a href="#" className="hover:text-yellow-300 transition-all p-1.5 bg-white/10 rounded-full">
+                  <a href="https://www.instagram.com/kindermusikwithagape/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-300 transition-all p-1.5 bg-white/10 rounded-full">
                     <Instagram className="w-4 h-4" />
                   </a>
                 </div>
