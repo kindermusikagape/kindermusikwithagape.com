@@ -333,7 +333,7 @@ export const MS_CLARICE = {
   role: 'Founder & Principal Educator',
   experience: '20+ Years of Experience',
   bio: 'With over 20 years of experience in music education and working with children and families, Ms Clarice leads the educational vision of Kindermusik with Agape.\n\nHer passion is to nurture every child\'s potential through the joy of music, movement, and meaningful connections.',
-  image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a65e0a0847bbd8a64d8710a.png',
+  image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a69cc1456ec4906858e5a40.png',
   alt: 'Kindermusik educator teaching children - Ms Clarice Koo, founder and principal educator'
 };
 

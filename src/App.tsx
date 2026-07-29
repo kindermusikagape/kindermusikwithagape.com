@@ -1207,19 +1207,19 @@ export default function App() {
           <div className="bg-[#F4E9FF] rounded-[40px] p-5 sm:p-7 lg:p-8 relative">
             <div className="bg-white rounded-[32px] p-5 sm:p-6 lg:p-8 shadow-sm border border-purple-50 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
               
-              {/* Left Image Side - occupying ~45% */}
-              <div className="lg:col-span-5 relative flex justify-center items-center">
-                <div className="relative w-full max-w-[420px] sm:max-w-[480px] rounded-[28px] overflow-hidden border-4 sm:border-8 border-purple-50 shadow-md transition-transform duration-300 hover:scale-[1.02] cursor-pointer">
+              {/* Left Image Side - expanded for 25-30% larger display */}
+              <div className="lg:col-span-6 relative flex justify-center items-center">
+                <div className="relative w-full max-w-[520px] sm:max-w-[600px] rounded-[28px] overflow-hidden border-4 sm:border-8 border-purple-50 shadow-md transition-transform duration-300 hover:scale-[1.02] cursor-pointer">
                   <img 
                     src={MS_CLARICE.image} 
                     alt={MS_CLARICE.alt || "Kindermusik educator teaching children - Ms Clarice Koo"} 
-                    className="w-full h-auto max-h-[480px] object-contain select-none block mx-auto"
+                    className="w-full h-auto max-h-[600px] object-contain select-none block mx-auto"
                   />
                 </div>
               </div>
 
               {/* Right Information Side */}
-              <div className="lg:col-span-7 space-y-4 text-left">
+              <div className="lg:col-span-6 space-y-4 text-left">
                 <div className="space-y-1">
                   <span className="text-brand-purple text-xs font-bold uppercase tracking-widest block">MEET YOUR EDUCATORS</span>
                   <h2 className="text-3xl md:text-4xl lg:text-[44px] font-bold font-display text-slate-900 leading-tight tracking-tight">
@@ -1248,7 +1248,7 @@ export default function App() {
                 {/* Trust Highlights */}
                 <div className="flex flex-wrap items-center gap-x-6 sm:gap-x-8 gap-y-3 pt-2 text-xs sm:text-sm font-semibold text-slate-700">
                   <div className="flex items-center gap-2">
-                    <Globe className="w-5 h-5 text-brand-purple shrink-0" />
+                    <Globe className="w-5 h-5 text-brand-green shrink-0" />
                     <span>Internationally Accredited Curriculum</span>
                   </div>
                   <div className="flex items-center gap-2">
