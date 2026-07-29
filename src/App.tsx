@@ -435,111 +435,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* 2.5 RECOGNISED FOR EXCELLENCE SECTION */}
-      <section id="recognised-for-excellence" className="py-8 md:py-12 bg-white relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#F4E9FF] rounded-[36px] sm:rounded-[40px] p-6 sm:p-8 lg:p-10 border border-[#EAE1F5] relative shadow-xs">
-          {/* Decorative Corner Accent Icons */}
-            <Sparkles className="w-5 h-5 text-[#B596F3] absolute top-6 left-6 hidden sm:block opacity-60" />
-            <Music className="w-5 h-5 text-[#5B31B1] absolute top-6 right-6 hidden sm:block opacity-60" />
-
-            {/* Header Title & Subtitle */}
-            <div className="text-center mb-8 sm:mb-10 max-w-3xl mx-auto">
-              <div className="flex items-center justify-center">
-                <h2 className="text-3xl sm:text-[38px] lg:text-[42px] font-bold font-display text-slate-900 tracking-tight leading-tight">
-                  Recognised for <span className="text-brand-purple">Excellence</span>
-                </h2>
-              </div>
-              <p className="text-slate-600 font-medium text-sm sm:text-base mt-2.5 tracking-wide leading-relaxed">
-                Internationally Accredited. Award-Winning. Parent Trusted.
-              </p>
-            </div>
-
-            {/* Two Main Recognition Cards */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-6 sm:mb-8 w-full">
-              {/* Card 1: Fully Accredited Kindermusik Program */}
-              <div className="bg-white rounded-[28px] p-6 sm:p-8 border border-purple-100/80 shadow-xs flex flex-col sm:flex-row items-center gap-6 transition-all hover:shadow-md w-full">
-                <div className="w-32 h-32 sm:w-36 sm:h-36 shrink-0 flex items-center justify-center relative">
-                  <BadgeImage 
-                    src={RECOGNITION_BADGES.accredited} 
-                    alt="Kindermusik international accreditation awards - Fully Accredited Program" 
-                    type="accredited"
-                  />
-                </div>
-                <div className="space-y-2.5 text-center sm:text-left flex-1">
-                  <h3 className="text-xl sm:text-2xl font-extrabold text-[#3B1B7D] leading-tight">
-                    Fully Accredited <br className="hidden sm:inline" />Kindermusik Program
-                  </h3>
-                  <p className="text-slate-700 text-sm sm:text-base leading-relaxed font-medium">
-                    Our program meets the highest standards of music education for children of all ages.
-                  </p>
-                </div>
-              </div>
-
-              {/* Card 2: Top Program 2024 Award Winner */}
-              <div className="bg-white rounded-[28px] p-6 sm:p-8 border border-purple-100/80 shadow-xs flex flex-col sm:flex-row items-center gap-6 transition-all hover:shadow-md w-full">
-                <div className="w-32 h-32 sm:w-36 sm:h-36 shrink-0 flex items-center justify-center relative">
-                  <BadgeImage 
-                    src={RECOGNITION_BADGES.topProgram} 
-                    alt="Kindermusik international accreditation awards - Top Program 2024 Winner" 
-                    type="topProgram"
-                  />
-                </div>
-                <div className="space-y-2.5 text-center sm:text-left flex-1">
-                  <h3 className="text-xl sm:text-2xl font-extrabold text-[#3B1B7D] leading-tight">
-                    Top Program 2024 <br className="hidden sm:inline" />Award Winner
-                  </h3>
-                  <p className="text-slate-700 text-sm sm:text-base leading-relaxed font-medium">
-                    Proud to be recognised for our excellence in early childhood music education.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Bottom Highlights / Pillars Row */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4 w-full">
-              <div className="flex items-center gap-3 bg-white/70 rounded-2xl p-3 sm:p-3.5 border border-purple-100/50 shadow-2xs">
-                <div className="w-9 h-9 rounded-full bg-teal-50/70 border border-teal-100/50 flex items-center justify-center shrink-0">
-                  <Globe className="w-5 h-5 text-teal-500/80" />
-                </div>
-                <span className="text-xs sm:text-sm font-semibold text-[#3B1B7D]/90 leading-snug">
-                  Trusted Worldwide
-                </span>
-              </div>
-
-              <div className="flex items-center gap-3 bg-white/70 rounded-2xl p-3 sm:p-3.5 border border-purple-100/50 shadow-2xs">
-                <div className="w-9 h-9 rounded-full bg-emerald-50/70 border border-emerald-100/50 flex items-center justify-center shrink-0">
-                  <Users className="w-5 h-5 text-emerald-500/80" />
-                </div>
-                <span className="text-xs sm:text-sm font-semibold text-[#3B1B7D]/90 leading-snug">
-                  Thousands of Families
-                </span>
-              </div>
-
-              <div className="flex items-center gap-3 bg-white/70 rounded-2xl p-3 sm:p-3.5 border border-purple-100/50 shadow-2xs">
-                <div className="w-9 h-9 rounded-full bg-amber-50/70 border border-amber-100/50 flex items-center justify-center shrink-0">
-                  <Music className="w-5 h-5 text-amber-500/80" />
-                </div>
-                <span className="text-xs sm:text-sm font-semibold text-[#3B1B7D]/90 leading-snug">
-                  Research-Based Learning
-                </span>
-              </div>
-
-              <div className="flex items-center gap-3 bg-white/70 rounded-2xl p-3 sm:p-3.5 border border-purple-100/50 shadow-2xs">
-                <div className="w-9 h-9 rounded-full bg-pink-50/70 border border-pink-100/50 flex items-center justify-center shrink-0">
-                  <Heart className="w-5 h-5 fill-[#FF5E85]/70 text-[#FF5E85]/70" />
-                </div>
-                <span className="text-xs sm:text-sm font-semibold text-[#3B1B7D]/90 leading-snug">
-                  Whole Child Development
-                </span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* 3. EXPERIENCE TITLE BANNER */}
+      {/* 2. VIDEO SECTION */}
       <div 
         className="bg-white py-6 text-center relative overflow-hidden"
       >
@@ -552,7 +448,6 @@ export default function App() {
         </h2>
       </div>
 
-      {/* 4. SEE KINDERMUSIK IN ACTION */}
       <section 
         className="py-12 md:py-16 relative" 
         style={{ backgroundColor: '#FFFFFF', paddingTop: '5px' }}
@@ -615,15 +510,103 @@ export default function App() {
         </div>
       </section>
 
-      {/* 5. WHY CHOOSE US? */}
+      {/* 3. PARENT CONCERNS */}
+      <section className="py-12 bg-white relative">
+        <div 
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        >
+          <div 
+            className="rounded-[40px] px-6 py-12 md:px-12 md:py-14 relative shadow-sm border border-purple-50/60" 
+            style={{ 
+              background: 'radial-gradient(circle at top left, #F9F4FF 0%, #FFFFFF 100%)', 
+              paddingBottom: '28px' 
+            }}
+          >
+            <div className="text-center max-w-2xl mx-auto mb-10 space-y-2">
+              <span className="text-brand-purple text-xs font-bold uppercase tracking-widest block">Parent Concerns</span>
+              <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 leading-tight tracking-tight">
+                Does This <span className="text-brand-purple">Sound Familiar?</span>
+              </h2>
+              <p className="text-slate-600 font-medium text-center text-[15px] sm:text-sm md:text-base mt-2">
+                Many parents come to us with these same concerns.
+              </p>
+            </div>
+
+            {/* Cards container */}
+            <div className="grid grid-cols-2 sm:grid-cols-6 lg:grid-cols-5 gap-6 lg:gap-8 justify-center">
+              {STRUGGLES.map((struggle, index) => (
+                <div 
+                  key={struggle.id} 
+                  className={`flex flex-col items-center group relative sm:col-span-2 lg:col-span-1 lg:col-start-auto ${
+                    index === 3 ? 'sm:col-start-2' : ''
+                  } last:col-span-2 sm:last:col-span-2 lg:last:col-span-1 last:max-w-[calc(50%-12px)] sm:last:max-w-none last:w-full last:mx-auto`}
+                >
+                  {/* Relative wrapper allowing badge to overflow beyond card boundaries */}
+                  <div className="relative w-full aspect-square transition-transform duration-300 group-hover:-translate-y-[6px]">
+                    {/* Rounded image container with white border and soft shadow */}
+                    <div className="w-full h-full rounded-[24px] overflow-hidden border-4 border-white shadow-sm group-hover:shadow-lg transition-all duration-300 bg-white/55">
+                      <img 
+                        src={struggle.image} 
+                        alt={struggle.alt || struggle.title} 
+                        className="w-full h-full object-cover select-none transition-transform duration-300 group-hover:scale-[1.03]"
+                      />
+                    </div>
+                    
+                    {/* Minimal white circular badge with #B18AE5 concern icon */}
+                    <div className="absolute -top-1.5 -right-1.5 z-10 w-6 h-6 bg-white rounded-full flex items-center justify-center border border-purple-100/80 shadow-sm">
+                      <HelpCircle className="w-3.5 h-3.5 text-[#B18AE5] stroke-[2.2]" />
+                    </div>
+                  </div>
+
+                  {/* Centered label & short supporting sentence under the card */}
+                  <h3 
+                    className="font-bold text-slate-900 text-[14px] sm:text-[16px] font-display text-center mt-3 max-w-[170px] leading-snug"
+                  >
+                    {struggle.title}
+                  </h3>
+                  <p className="text-slate-500 text-[10px] sm:text-xs font-normal text-center mt-1 max-w-[170px] leading-tight">
+                    {struggle.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* Transition sentence */}
+            <p className="text-brand-purple font-medium text-base sm:text-[18px] text-center max-w-2xl mx-auto mt-10 mb-6 px-4 leading-relaxed">
+              Every Kindermusik class is thoughtfully designed to nurture these skills through joyful music, movement, and meaningful parent-child experiences.
+            </p>
+
+            {/* Prompt Buttons inside the card */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+              <button 
+                onClick={() => setIsBookingModalOpen(true)}
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-3.5 text-xs font-bold text-white bg-brand-purple hover:bg-brand-purple-hover rounded-full shadow-md transition-all cursor-pointer hover:-translate-y-0.5 active:translate-y-0"
+                style={{ height: '41.9757px', paddingTop: '0px', paddingBottom: '0px' }}
+              >
+                <Calendar className="w-4 h-4 text-white" />
+                Find My Child's Perfect Class
+              </button>
+              <button 
+                onClick={handleWhatsAppClick}
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-3.5 text-xs font-bold text-white bg-brand-green hover:bg-brand-green-hover rounded-full shadow-md shadow-brand-green/10 transition-all cursor-pointer hover:-translate-y-0.5 active:translate-y-0"
+                style={{ height: '41.9757px', paddingTop: '0px', paddingBottom: '0px' }}
+              >
+                <MessageSquare className="w-4 h-4 fill-white text-brand-green" />
+                WhatsApp Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. BENEFITS SECTION */}
       <section 
         id="why-choose-us" 
         className="py-16 md:py-20 bg-[#FEFEFE] relative overflow-hidden"
-        style={{ minHeight: '660px', marginTop: '-41px', marginBottom: '-40px', backgroundColor: '#FEFEFE', paddingTop: '110px', paddingBottom: '80px' }}
+        style={{ minHeight: '660px', backgroundColor: '#FEFEFE', paddingTop: '80px', paddingBottom: '80px' }}
       >
         <div 
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
-          style={{ paddingTop: '0px', marginTop: '-47px' }}
         >
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             {/* Left classroom picture */}
@@ -732,96 +715,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* 6. DOES THIS SOUND FAMILIAR? */}
-      <section className="py-12 bg-white relative" style={{ marginTop: '-7px' }}>
-        <div 
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
-        >
-          <div 
-            className="rounded-[40px] px-6 py-12 md:px-12 md:py-14 relative shadow-sm border border-purple-50/60" 
-            style={{ 
-              background: 'radial-gradient(circle at top left, #F9F4FF 0%, #FFFFFF 100%)', 
-              paddingBottom: '28px' 
-            }}
-          >
-            <div className="text-center max-w-2xl mx-auto mb-10 space-y-2">
-              <span className="text-brand-purple text-xs font-bold uppercase tracking-widest block">Parent Concerns</span>
-              <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 leading-tight tracking-tight">
-                Does This <span className="text-brand-purple">Sound Familiar?</span>
-              </h2>
-              <p className="text-slate-600 font-medium text-center text-[15px] sm:text-sm md:text-base mt-2">
-                Many parents come to us with these same concerns.
-              </p>
-            </div>
-
-            {/* Cards container */}
-            <div className="grid grid-cols-2 sm:grid-cols-6 lg:grid-cols-5 gap-6 lg:gap-8 justify-center">
-              {STRUGGLES.map((struggle, index) => (
-                <div 
-                  key={struggle.id} 
-                  className={`flex flex-col items-center group relative sm:col-span-2 lg:col-span-1 lg:col-start-auto ${
-                    index === 3 ? 'sm:col-start-2' : ''
-                  } last:col-span-2 sm:last:col-span-2 lg:last:col-span-1 last:max-w-[calc(50%-12px)] sm:last:max-w-none last:w-full last:mx-auto`}
-                >
-                  {/* Relative wrapper allowing badge to overflow beyond card boundaries */}
-                  <div className="relative w-full aspect-square transition-transform duration-300 group-hover:-translate-y-[6px]">
-                    {/* Rounded image container with white border and soft shadow */}
-                    <div className="w-full h-full rounded-[24px] overflow-hidden border-4 border-white shadow-sm group-hover:shadow-lg transition-all duration-300 bg-white/55">
-                      <img 
-                        src={struggle.image} 
-                        alt={struggle.alt || struggle.title} 
-                        className="w-full h-full object-cover select-none transition-transform duration-300 group-hover:scale-[1.03]"
-                      />
-                    </div>
-                    
-                    {/* Minimal white circular badge with #B18AE5 concern icon */}
-                    <div className="absolute -top-1.5 -right-1.5 z-10 w-6 h-6 bg-white rounded-full flex items-center justify-center border border-purple-100/80 shadow-sm">
-                      <HelpCircle className="w-3.5 h-3.5 text-[#B18AE5] stroke-[2.2]" />
-                    </div>
-                  </div>
-
-                  {/* Centered label & short supporting sentence under the card */}
-                  <h3 
-                    className="font-bold text-slate-900 text-[14px] sm:text-[16px] font-display text-center mt-3 max-w-[170px] leading-snug"
-                  >
-                    {struggle.title}
-                  </h3>
-                  <p className="text-slate-500 text-[10px] sm:text-xs font-normal text-center mt-1 max-w-[170px] leading-tight">
-                    {struggle.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            {/* Transition sentence */}
-            <p className="text-brand-purple font-medium text-base sm:text-[18px] text-center max-w-2xl mx-auto mt-10 mb-6 px-4 leading-relaxed">
-              Every Kindermusik class is thoughtfully designed to nurture these skills through joyful music, movement, and meaningful parent-child experiences.
-            </p>
-
-            {/* Prompt Buttons inside the card */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
-              <button 
-                onClick={() => setIsBookingModalOpen(true)}
-                className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-3.5 text-xs font-bold text-white bg-brand-purple hover:bg-brand-purple-hover rounded-full shadow-md transition-all cursor-pointer hover:-translate-y-0.5 active:translate-y-0"
-                style={{ height: '41.9757px', paddingTop: '0px', paddingBottom: '0px' }}
-              >
-                <Calendar className="w-4 h-4 text-white" />
-                Find My Child's Perfect Class
-              </button>
-              <button 
-                onClick={handleWhatsAppClick}
-                className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-3.5 text-xs font-bold text-white bg-brand-green hover:bg-brand-green-hover rounded-full shadow-md shadow-brand-green/10 transition-all cursor-pointer hover:-translate-y-0.5 active:translate-y-0"
-                style={{ height: '41.9757px', paddingTop: '0px', paddingBottom: '0px' }}
-              >
-                <MessageSquare className="w-4 h-4 fill-white text-brand-green" />
-                WhatsApp Us
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 7. HOW WE HELP CHILDREN THRIVE */}
+      {/* 5. DEVELOPMENT BENEFITS */}
       <section className="py-16 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-[801px] w-full mx-auto mb-10 space-y-2">
@@ -921,6 +815,110 @@ export default function App() {
           <p className="text-brand-purple font-medium text-[18px] text-center max-w-[700px] mx-auto mt-12 mb-2 px-4 leading-relaxed">
             Ready to nurture these lifelong skills? Explore the Kindermusik class that's perfectly matched to your child's age and stage.
           </p>
+        </div>
+      </section>
+
+      {/* 6. RECOGNITION SECTION */}
+      <section id="recognised-for-excellence" className="py-8 md:py-12 bg-white relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[#F4E9FF] rounded-[36px] sm:rounded-[40px] p-6 sm:p-8 lg:p-10 border border-[#EAE1F5] relative shadow-xs">
+          {/* Decorative Corner Accent Icons */}
+            <Sparkles className="w-5 h-5 text-[#B596F3] absolute top-6 left-6 hidden sm:block opacity-60" />
+            <Music className="w-5 h-5 text-[#5B31B1] absolute top-6 right-6 hidden sm:block opacity-60" />
+
+            {/* Header Title & Subtitle */}
+            <div className="text-center mb-8 sm:mb-10 max-w-3xl mx-auto">
+              <div className="flex items-center justify-center">
+                <h2 className="text-3xl sm:text-[38px] lg:text-[42px] font-bold font-display text-slate-900 tracking-tight leading-tight">
+                  Recognised for <span className="text-brand-purple">Excellence</span>
+                </h2>
+              </div>
+              <p className="text-slate-600 font-medium text-sm sm:text-base mt-2.5 tracking-wide leading-relaxed">
+                Internationally Accredited. Award-Winning. Parent Trusted.
+              </p>
+            </div>
+
+            {/* Two Main Recognition Cards */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-6 sm:mb-8 w-full">
+              {/* Card 1: Fully Accredited Kindermusik Program */}
+              <div className="bg-white rounded-[28px] p-6 sm:p-8 border border-purple-100/80 shadow-xs flex flex-col sm:flex-row items-center gap-6 transition-all hover:shadow-md w-full">
+                <div className="w-32 h-32 sm:w-36 sm:h-36 shrink-0 flex items-center justify-center relative">
+                  <BadgeImage 
+                    src={RECOGNITION_BADGES.accredited} 
+                    alt="Kindermusik international accreditation awards - Fully Accredited Program" 
+                    type="accredited"
+                  />
+                </div>
+                <div className="space-y-2.5 text-center sm:text-left flex-1">
+                  <h3 className="text-xl sm:text-2xl font-extrabold text-[#3B1B7D] leading-tight">
+                    Fully Accredited <br className="hidden sm:inline" />Kindermusik Program
+                  </h3>
+                  <p className="text-slate-700 text-sm sm:text-base leading-relaxed font-medium">
+                    Our program meets the highest standards of music education for children of all ages.
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 2: Top Program 2024 Award Winner */}
+              <div className="bg-white rounded-[28px] p-6 sm:p-8 border border-purple-100/80 shadow-xs flex flex-col sm:flex-row items-center gap-6 transition-all hover:shadow-md w-full">
+                <div className="w-32 h-32 sm:w-36 sm:h-36 shrink-0 flex items-center justify-center relative">
+                  <BadgeImage 
+                    src={RECOGNITION_BADGES.topProgram} 
+                    alt="Kindermusik international accreditation awards - Top Program 2024 Winner" 
+                    type="topProgram"
+                  />
+                </div>
+                <div className="space-y-2.5 text-center sm:text-left flex-1">
+                  <h3 className="text-xl sm:text-2xl font-extrabold text-[#3B1B7D] leading-tight">
+                    Top Program 2024 <br className="hidden sm:inline" />Award Winner
+                  </h3>
+                  <p className="text-slate-700 text-sm sm:text-base leading-relaxed font-medium">
+                    Proud to be recognised for our excellence in early childhood music education.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom Highlights / Pillars Row */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4 w-full">
+              <div className="flex items-center gap-3 bg-white/70 rounded-2xl p-3 sm:p-3.5 border border-purple-100/50 shadow-2xs">
+                <div className="w-9 h-9 rounded-full bg-teal-50/70 border border-teal-100/50 flex items-center justify-center shrink-0">
+                  <Globe className="w-5 h-5 text-teal-500/80" />
+                </div>
+                <span className="text-xs sm:text-sm font-semibold text-[#3B1B7D]/90 leading-snug">
+                  Trusted Worldwide
+                </span>
+              </div>
+
+              <div className="flex items-center gap-3 bg-white/70 rounded-2xl p-3 sm:p-3.5 border border-purple-100/50 shadow-2xs">
+                <div className="w-9 h-9 rounded-full bg-emerald-50/70 border border-emerald-100/50 flex items-center justify-center shrink-0">
+                  <Users className="w-5 h-5 text-emerald-500/80" />
+                </div>
+                <span className="text-xs sm:text-sm font-semibold text-[#3B1B7D]/90 leading-snug">
+                  Thousands of Families
+                </span>
+              </div>
+
+              <div className="flex items-center gap-3 bg-white/70 rounded-2xl p-3 sm:p-3.5 border border-purple-100/50 shadow-2xs">
+                <div className="w-9 h-9 rounded-full bg-amber-50/70 border border-amber-100/50 flex items-center justify-center shrink-0">
+                  <Music className="w-5 h-5 text-amber-500/80" />
+                </div>
+                <span className="text-xs sm:text-sm font-semibold text-[#3B1B7D]/90 leading-snug">
+                  Research-Based Learning
+                </span>
+              </div>
+
+              <div className="flex items-center gap-3 bg-white/70 rounded-2xl p-3 sm:p-3.5 border border-purple-100/50 shadow-2xs">
+                <div className="w-9 h-9 rounded-full bg-pink-50/70 border border-pink-100/50 flex items-center justify-center shrink-0">
+                  <Heart className="w-5 h-5 fill-[#FF5E85]/70 text-[#FF5E85]/70" />
+                </div>
+                <span className="text-xs sm:text-sm font-semibold text-[#3B1B7D]/90 leading-snug">
+                  Whole Child Development
+                </span>
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
 
