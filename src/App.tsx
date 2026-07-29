@@ -253,7 +253,7 @@ export default function App() {
               <button 
                 onClick={() => setIsBookingModalOpen(true)}
                 className="flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold text-white bg-brand-purple hover:bg-brand-purple-hover rounded-full transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
-                style={{ height: '41.9792px', width: '245.903px', paddingTop: '0px', paddingBottom: '0px', boxShadow: '0 6px 20px rgba(111,63,245,0.22)' }}
+                style={{ height: '41.9792px', width: '267.903px', paddingTop: '0px', paddingBottom: '0px', boxShadow: '0 6px 20px rgba(111,63,245,0.22)' }}
               >
                 <Calendar className="w-5 h-5" />
                 Book a Free Trial Class
