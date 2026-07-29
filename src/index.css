@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Caveat:wght@700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Quicksand", sans-serif;
+  --font-hand: "Caveat", cursive;
+  
+  --color-brand-purple: #7B52AB;
+  --color-brand-purple-hover: #694199;
+  --color-brand-teal: #30B0A4;
+  --color-brand-teal-hover: #23948A;
+  --color-brand-green: #4CD080;
+  --color-brand-green-hover: #3CBA6D;
+  --color-brand-pink: #FF6B8B;
+  
+  --color-bg-purple: #F5F0FB;
+  --color-bg-teal: #E8F7F5;
+  --color-bg-orange: #FFF8F0;
+  --color-bg-pink: #FFF2F6;
+  --color-bg-yellow: #FFFDF0;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #1A1A1A;
+  background-color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
