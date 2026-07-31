@@ -388,7 +388,7 @@ export const FAQS: FAQItem[] = [
   },
   {
     question: "Do parents join the class?",
-    answer: "Yes. Parents actively participate in our younger age programmes, creating meaningful bonding experiences while learning together. Older children gradually become more independent."
+    answer: "Yes! Parents actively participate in our classes for younger children, creating meaningful bonding experiences while learning and growing together. As children reach age 3 and above, parents gradually step back as they become more confident and independent."
   },
   {
     question: "What if my child is shy or cries during class?",
@@ -404,7 +404,7 @@ export const FAQS: FAQItem[] = [
   },
   {
     question: "What should my child wear?",
-    answer: "Comfortable clothing that allows your child to move, dance and explore freely is all that's needed."
+    answer: "Comfortable clothing that allows your child to move, dance, and explore freely is all they need. For hygiene purposes, all children are required to wear socks during class."
   },
   {
     question: "How do I choose the right programme?",
