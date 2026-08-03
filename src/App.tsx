@@ -258,22 +258,32 @@ export default function App() {
 
             {/* Desktop Action Buttons */}
             <div className="hidden lg:flex items-center gap-3">
-              <button 
-                onClick={() => setIsBookingModalOpen(true)}
-                className="flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold text-white bg-brand-purple hover:bg-brand-purple-hover rounded-full transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
-                style={{ height: '41.9792px', width: '267.903px', paddingTop: '0px', paddingBottom: '0px', boxShadow: '0 6px 20px rgba(111,63,245,0.22)' }}
-              >
-                <Calendar className="w-5 h-5" />
-                Book a Free Trial Class
-              </button>
-              <button 
-                onClick={handleWhatsAppClick}
-                className="flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold text-white bg-brand-green hover:bg-brand-green-hover rounded-full shadow-lg shadow-brand-green/20 hover:shadow-xl hover:shadow-brand-green/30 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
-                style={{ height: '41.9792px', paddingTop: '0px', paddingBottom: '0px' }}
-              >
-                <MessageSquare className="w-5 h-5 fill-white text-brand-green" />
-                WhatsApp Us
-              </button>
+              <button
+  onClick={() => {
+    if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
+      (window as any).gtag('event', 'free_trial_click', {
+        event_category: 'lead',
+        event_label: 'Book a Free Trial Class'
+      });
+    }
+
+    setIsBookingModalOpen(true);
+  }}
+  className="flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold text-white bg-brand-purple hover:bg-brand-purple-hover rounded-full transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0"
+  style={{ height: '41.9792px', width: '267.903px', paddingTop: '0px', paddingBottom: '0px', boxShadow: '0 6px 20px rgba(111,63,245,0.22)' }}
+>
+  <Calendar className="w-5 h-5" />
+  Book a Free Trial Class
+</button>
+
+<button
+  onClick={handleWhatsAppClick}
+  className="flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold text-white bg-brand-green hover:bg-brand-green-hover rounded-full shadow-lg shadow-brand-green/20 hover:shadow-xl"
+  style={{ height: '41.9792px', paddingTop: '0px', paddingBottom: '0px' }}
+>
+  <MessageSquare className="w-5 h-5 fill-white text-brand-green" />
+  WhatsApp Us
+</button>
             </div>
 
             {/* Mobile menu button */}
