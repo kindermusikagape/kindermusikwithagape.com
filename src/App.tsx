@@ -376,7 +376,7 @@ export default function App() {
 
               <div className="space-y-2 text-slate-600 text-sm sm:text-base md:text-lg lg:text-[20px] leading-relaxed mx-auto lg:mx-0 max-w-[532px]">
                 <p>Every song, every movement and every smile helps your child grow with confidence, curiosity and joy.</p>
-                <p>Award-winning Kindermusik classes for children aged 0–7 in a warm, nurturing environment where families learn together.</p>
+                <p>Award-winning Kindermusik classes in Ipoh for babies, toddlers and children aged 0-7, with locations at Station 18 and Botani.</p>
               </div>
 
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2 max-w-none lg:max-w-[620px]">
