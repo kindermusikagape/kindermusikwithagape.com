@@ -1532,11 +1532,11 @@ export default function App() {
               </p>
             </div>
 
-            {/* Bandar Cyber Address Column */}
+            {/* Botani Address Column */}
             <div className="md:col-span-2 space-y-4">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-yellow-300" />
-                <h3 className="font-bold text-xs uppercase tracking-wider text-emerald-100">Bandar Cyber</h3>
+                <h3 className="font-bold text-xs uppercase tracking-wider text-emerald-100">Botani</h3>
               </div>
               <p className="text-xs text-emerald-50 leading-relaxed">
                 42, Lebuh Lapangan Siber 2,<br />
