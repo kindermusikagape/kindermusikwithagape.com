@@ -160,9 +160,17 @@ export default function App() {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const text = "Hello Kindermusik with Agape!\n\nI found your website and I'm interested in your music and movement classes for my child.\n\nCould you please share more information about the classes, schedule and free trial session? Thank you!";
-    window.open(`https://wa.me/60195721205?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
-  };
+  // Track WhatsApp click in GA4
+  if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
+    (window as any).gtag('event', 'whatsapp_click', {
+      event_category: 'lead',
+      event_label: 'WhatsApp Us'
+    });
+  }
+
+  const text = "Hello Kindermusik with Agape!\n\nI found your website and I'm interested in your music and movement classes for my child.\n\nCould you please share more information about the classes, schedule and free trial?";
+  window.open(`https://wa.me/60195721205?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+};
 
   // Helper to resolve benefit icons dynamically
   const getBenefitIcon = (iconName: string, theme: string) => {
