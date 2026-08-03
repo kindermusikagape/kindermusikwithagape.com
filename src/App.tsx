@@ -930,8 +930,8 @@ export default function App() {
           <div className="text-center max-w-3xl mx-auto mb-12 space-y-2">
             <span className="text-brand-purple text-xs font-bold uppercase tracking-widest block">Our Programs</span>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 leading-tight">
-              Find the Right Class <span className="text-brand-purple">for Your Little One</span>
-            </h2>
+  Find the Right Music Class <span className="text-brand-purple">for Your Little One</span>
+</h2>
           </div>
 
           {/* Cards list */}
