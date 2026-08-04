@@ -384,7 +384,7 @@ export default function App() {
             {/* Hero Left Content */}
             <div className="space-y-4 sm:space-y-6 text-center lg:text-left relative z-10 max-w-[532px] mx-auto lg:mx-0">
               <span 
-                className="inline-block text-brand-teal font-hand font-bold text-[24px] sm:text-[30px] tracking-wide"
+                className="inline-block text-[#247A76] font-hand font-bold text-[24px] sm:text-[30px] tracking-wide"
               >
                 Music, Movement, Connection.
               </span>
