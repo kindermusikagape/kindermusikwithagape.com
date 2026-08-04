@@ -292,10 +292,11 @@ export default function App() {
 
             {/* Mobile menu button */}
             <div className="lg:hidden">
-              <button 
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="p-2 rounded-lg text-white hover:text-yellow-300 hover:bg-white/10 transition-all cursor-pointer"
-              >
+             <button
+  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+  aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+  className="p-2 rounded-lg text-white hover:text-yellow-300 hover:bg-white/10 transition-all cursor-pointer"
+>
                 {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </button>
             </div>
