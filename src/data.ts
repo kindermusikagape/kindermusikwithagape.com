@@ -277,14 +277,14 @@ export const PROGRAM_CLASSES: ProgramClass[] = [
 ];
 
 export const GALLERY_MOMENTS = [
-  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44dbbab76c4ad15abfd7ab.png',
+  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71d823a25930148ef9a78f.webp',
   'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44dba7b76c4ad15abfbf7b.png',
   'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a65db65fb06386edee84199.png',
   'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44dbba299687043cb4cd59.png',
   'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44dbc5050e64f73d93a413.png',
   'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44dbb1299687043cb4cc89.png',
   'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44dbadb76c4ad15abfd65a.png',
-  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44dbba4b7af45105a48304.png',
+  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71d823670a4ee783c9c79a.webp',
   'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44dbbab76c4ad15abfd7af.png',
   'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a65e162847bbd8a64d94b4d.png'
 ];
@@ -333,7 +333,7 @@ export const MS_CLARICE = {
   role: 'Founder & Principal Educator',
   experience: '20+ Years of Experience',
   bio: 'With over 20 years of experience in music education and working with children and families, Ms Clarice leads the educational vision of Kindermusik with Agape.\n\nHer passion is to nurture every child\'s potential through the joy of music, movement, and meaningful connections.',
-  image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a69cc1456ec4906858e5a40.png',
+  image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71d823a25930148ef9a621.webp',
   alt: 'Kindermusik educator teaching children - Ms Clarice Koo, founder and principal educator'
 };
 
@@ -344,7 +344,7 @@ export const OTHER_TEACHERS: Teacher[] = [
     role: 'Kindermusik Educator',
     badge: '🎵 Music & Storytelling',
     bio: 'Creates joyful music experiences that inspire confidence and curiosity.',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a647b9f9eb8e1b1cc5684b5.png',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71d823c8f2b5f1cfc55e3b.webp',
     alt: 'Kindermusik educator Sandy teaching music and storytelling'
   },
   {
@@ -353,7 +353,7 @@ export const OTHER_TEACHERS: Teacher[] = [
     role: 'Kindermusik Educator',
     badge: '❤️ Warm & Patient',
     bio: 'Creates warm, engaging classes where children learn through joyful music and movement.',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a647b9f9eb8e1b1cc5684b9.png',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71d8230629193ed5a3eb2d.webp',
     alt: 'Kindermusik educator Xin Yuan guiding children in music and movement'
   },
   {
@@ -362,7 +362,7 @@ export const OTHER_TEACHERS: Teacher[] = [
     role: 'Kindermusik Educator',
     badge: '🌈 Creativity & Confidence',
     bio: 'Guides children to build confidence, creativity, and lasting social connections.',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a647b9ffb06386ede7463f7.png',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71d823ee7ca3d1c4173ed2.webp',
     alt: 'Kindermusik educator Fun leading creative music activities'
   }
 ];
