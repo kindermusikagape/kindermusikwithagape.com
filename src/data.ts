@@ -278,52 +278,52 @@ export const PROGRAM_CLASSES: ProgramClass[] = [
 
 export const GALLERY_MOMENTS = [
   'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71d823a25930148ef9a78f.webp',
-  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44dba7b76c4ad15abfbf7b.png',
-  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a65db65fb06386edee84199.png',
-  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44dbba299687043cb4cd59.png',
-  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44dbc5050e64f73d93a413.png',
-  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44dbb1299687043cb4cc89.png',
-  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44dbadb76c4ad15abfd65a.png',
+  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71db90ee7ca3d1c41cce0a.webp',
+  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71db920629193ed5aba86b.webp',
+  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71db93c8f2b5f1cfd3ca44.webp',
+  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71db92df32aa3e16959f60.webp',
+  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71db90ee7ca3d1c41cce05.webp',
+  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71db90df32aa3e169596fd.webp',
   'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71d823670a4ee783c9c79a.webp',
-  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44dbbab76c4ad15abfd7af.png',
-  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a65e162847bbd8a64d94b4d.png'
+  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71db920629193ed5aba864.webp',
+  'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71db90fcee90cf63c5413a.webp'
 ];
 
 export const LEARNING_SPACES: Space[] = [
   {
     id: 'ls1',
     title: 'Children Corner',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44faa292bc8a2b6a1a7c24.png',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71db92ee7ca3d1c41cce53.webp',
     alt: 'Kindermusik Children Corner learning space environment'
   },
   {
     id: 'ls2',
     title: 'Parents Corner',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44faa22bed802fc6beb21d.png',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71db93670a4ee783cefde2.webp',
     alt: 'Kindermusik Parents Corner comfortable waiting area'
   },
   {
     id: 'ls3',
     title: 'Service Counter',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44faa2dc5f2c22a26d4577.png',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71db9093ccff2840bdc5f3.webp',
     alt: 'Kindermusik with Agape service counter and reception'
   },
   {
     id: 'ls4',
     title: 'Music Room',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44faa2f5487c9778e4c8fd.png',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71db92fcee90cf63c54160.webp',
     alt: 'Purpose-built Kindermusik music room classroom environment'
   },
   {
     id: 'ls5',
     title: 'Waiting Area',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44faa28b4444aad4ce135d.png',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71db900629193ed5aba846.webp',
     alt: 'Welcoming waiting area for parents and children'
   },
   {
     id: 'ls6',
     title: 'Piano Stair',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44faa292bc8a2b6a1a7c1f.png',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71db9493ccff2840bdc643.webp',
     alt: 'Interactive piano staircase in Kindermusik learning center'
   }
 ];
