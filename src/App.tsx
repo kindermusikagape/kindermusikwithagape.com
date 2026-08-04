@@ -216,6 +216,8 @@ export default function App() {
                 src="https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71d4bef72284777bc94c69.webp" 
                 alt="Kindermusik with Agape logo" 
                 className="object-contain brightness-0 invert"
+                width={195}
+                height={86}
                 style={{ width: '195.257px', height: '85.9826px' }}
                 referrerPolicy="no-referrer"
               />
