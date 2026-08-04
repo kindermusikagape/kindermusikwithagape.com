@@ -1246,7 +1246,9 @@ export default function App() {
                     src={MS_CLARICE.image} 
                     alt={MS_CLARICE.alt || "Kindermusik educator teaching children - Ms Clarice Koo"} 
                     className="w-full h-auto max-h-[600px] object-contain select-none block mx-auto"
-                  />
+                 width={600}
+                 height={750}
+                    />
                 </div>
               </div>
 
