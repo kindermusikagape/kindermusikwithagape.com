@@ -424,7 +424,7 @@ export default function App() {
             {/* Hero Right Photo Collage & Illustration */}
             <div className="w-full h-auto flex justify-center lg:justify-end items-center relative z-10">
               <img 
-                src="https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a670b470c11dfa80349a210.png" 
+                src="https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a717ac4497cd89d24c4b244.webp" 
                 alt="Kindermusik teacher playing music with young children in Ipoh" 
                 className="w-full h-auto max-h-[380px] sm:max-h-[480px] lg:max-h-none lg:h-[480px] object-contain max-w-[660px] lg:max-w-none transform lg:scale-110 origin-center transition-transform duration-300"
                 loading="eager"
