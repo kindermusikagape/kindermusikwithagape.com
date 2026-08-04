@@ -136,6 +136,8 @@ function BadgeImage({ src, alt, type }: { src: string; alt: string; type: 'accre
       src={src} 
       alt={alt} 
       onError={() => setHasError(true)}
+      width={400}
+      height={400}
       className="max-w-full max-h-full object-contain" 
     />
   );
