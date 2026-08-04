@@ -215,7 +215,7 @@ export default function App() {
             {/* Logo */}
             <div className="flex items-center">
               <img 
-                src="https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71d4bef72284777bc94c69.webp" 
+                src="https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71f7e5c8f2b5f1cf0bcaaa.webp" 
                 alt="Kindermusik with Agape logo" 
                 className="object-contain brightness-0 invert"
                 width={195}
@@ -428,7 +428,7 @@ export default function App() {
             {/* Hero Right Photo Collage & Illustration */}
             <div className="w-full h-auto flex justify-center lg:justify-end items-center relative z-10">
               <img 
-                src="https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a717ac4497cd89d24c4b244.webp" 
+                src="https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71f7e7df32aa3e16ccf22c.webp" 
                 alt="Kindermusik teacher playing music with young children in Ipoh" 
                 className="w-full h-auto max-h-[380px] sm:max-h-[480px] lg:max-h-none lg:h-[480px] object-contain max-w-[660px] lg:max-w-none transform lg:scale-110 origin-center transition-transform duration-300"
                 width={992}
