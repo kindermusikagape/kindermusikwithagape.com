@@ -231,7 +231,7 @@ export const PROGRAM_CLASSES: ProgramClass[] = [
     textClass: 'text-amber-800',
     btnClass: 'bg-amber-500 hover:bg-amber-600 text-white',
     badge: 'NOW ENROLLING',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a717f3dcf81b06f05d00612.webp',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71f7e8c8f2b5f1cf0bcc45.webp',
     alt: 'Babies and parents exploring sensory music in Kindermusik Babies class',
     perfectFor: ['First-time Parents', 'Parent & Child Bonding', 'Sensory Development']
   },
@@ -368,8 +368,8 @@ export const OTHER_TEACHERS: Teacher[] = [
 ];
 
 export const RECOGNITION_BADGES = {
-  accredited: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71e26c0629193ed5b7dd34.webp',
-  topProgram: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71e26afcee90cf63d493ae.webp',
+  accredited: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71f7e4c8f2b5f1cf0bc6f4.webp',
+  topProgram: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71f7e90629193ed5e80103.webp',
 };
 
 export interface FAQItem {
