@@ -169,7 +169,7 @@ export const STRUGGLES: Struggle[] = [
     id: 's4',
     title: 'Missing Quality Parent–Child Time',
     description: 'Busy schedules leave less time together.',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71e26adf32aa3e169fd9e8.webpp',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71e26adf32aa3e169fd9e8.webp',
     alt: 'Parent and child bonding during music class',
     tag: 'Busy working lifestyle'
   },
