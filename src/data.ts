@@ -231,7 +231,7 @@ export const PROGRAM_CLASSES: ProgramClass[] = [
     textClass: 'text-amber-800',
     btnClass: 'bg-amber-500 hover:bg-amber-600 text-white',
     badge: 'NOW ENROLLING',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44c3ab21b1234da3f1f7cc.png',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a717f3dcf81b06f05d00612.webp',
     alt: 'Babies and parents exploring sensory music in Kindermusik Babies class',
     perfectFor: ['First-time Parents', 'Parent & Child Bonding', 'Sensory Development']
   },
