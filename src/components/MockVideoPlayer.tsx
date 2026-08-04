@@ -83,6 +83,7 @@ export const MockVideoPlayer: React.FC<MockVideoPlayerProps> = ({ className = ""
               {/* Central Play Button */}
               <button 
                 onClick={(e) => { e.stopPropagation(); handlePlayToggle(); }}
+                aria-label="Play video"
                 className="z-10 self-center p-4 sm:p-5 bg-brand-purple hover:bg-brand-purple-hover hover:scale-110 active:scale-95 text-white rounded-full shadow-lg transition-all duration-300 group cursor-pointer"
               >
                 <Play className="w-8 h-8 sm:w-10 sm:h-10 fill-white translate-x-0.5 group-hover:scale-105 transition-all" />
