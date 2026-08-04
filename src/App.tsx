@@ -640,6 +640,8 @@ export default function App() {
                   src="https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a717f3852a8368950c06c7a.webp" 
                   alt="Kindermusik educator teaching children in classroom" 
                   className="w-full h-full object-cover"
+                  width={600}
+                  height={750}
                   style={{ marginLeft: '0px' }}
                   referrerPolicy="no-referrer"
                 />
