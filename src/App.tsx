@@ -1593,10 +1593,10 @@ export default function App() {
                   +6019 572 1205
                 </p>
                 <div className="flex gap-3">
-                  <a href="https://www.facebook.com/KindermusikwithAgape" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-300 transition-all p-1.5 bg-white/10 rounded-full">
+                  <a href="https://www.facebook.com/KindermusikwithAgape" target="_blank" rel="noopener noreferrer" aria-label="Kindermusik with Agape Facebook" className="hover:text-yellow-300 transition-all p-1.5 bg-white/10 rounded-full">
                     <Facebook className="w-4 h-4" />
                   </a>
-                  <a href="https://www.instagram.com/kindermusikwithagape/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-300 transition-all p-1.5 bg-white/10 rounded-full">
+                  <a href="https://www.instagram.com/kindermusikwithagape/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Kindermusik with Agape Instagram" className="hover:text-yellow-300 transition-all p-1.5 bg-white/10 rounded-full">
                     <Instagram className="w-4 h-4" />
                   </a>
                 </div>
