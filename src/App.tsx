@@ -637,7 +637,7 @@ export default function App() {
             <div className="lg:col-span-5 relative pl-0 pr-4 sm:pr-6" style={{ paddingLeft: '0px', marginLeft: '0px' }}>
               <div className="relative rounded-[48px] overflow-hidden shadow-none aspect-[4/4.5] bg-slate-100" style={{ marginLeft: '0px' }}>
                 <img 
-                  src="https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a43c659c597b88b6126684b.png" 
+                  src="https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a717f3852a8368950c06c7a.webp" 
                   alt="Kindermusik educator teaching children in classroom" 
                   className="w-full h-full object-cover"
                   style={{ marginLeft: '0px' }}
