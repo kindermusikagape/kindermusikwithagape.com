@@ -368,8 +368,8 @@ export const OTHER_TEACHERS: Teacher[] = [
 ];
 
 export const RECOGNITION_BADGES = {
-  accredited: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a65d660fddfeb1aa9f3d3a0.png',
-  topProgram: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a65d66afddfeb1aa9f3d436.png',
+  accredited: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a718e6f52a8368950f036fe.webp',
+  topProgram: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a718e6fcf81b06f050589f1.webp',
 };
 
 export interface FAQItem {
