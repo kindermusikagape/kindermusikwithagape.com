@@ -244,7 +244,7 @@ export const PROGRAM_CLASSES: ProgramClass[] = [
     textClass: 'text-teal-800',
     btnClass: 'bg-brand-teal hover:bg-brand-teal-hover text-white',
     badge: 'NOW ENROLLING',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44d69f299687043cb12304.png',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a7188d8497cd89d24f74262.webp',
     alt: 'Toddlers moving and playing instruments in Kindermusik Toddlers class',
     perfectFor: ['Active Exploration', 'Early Speech & Movement', 'Social & Emotional Growth']
   },
@@ -257,7 +257,7 @@ export const PROGRAM_CLASSES: ProgramClass[] = [
     textClass: 'text-pink-800',
     btnClass: 'bg-brand-pink hover:bg-pink-600 text-white',
     badge: 'NOW ENROLLING',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44dc774b7af45105a4efa6.png',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a7188d8497cd89d24f7425e.webp',
     alt: 'Preschool children singing and learning rhythm in Kindermusik Preschoolers class',
     perfectFor: ['Creative Expression', 'Independent Learning', 'Rhythm & Coordination']
   },
@@ -270,7 +270,7 @@ export const PROGRAM_CLASSES: ProgramClass[] = [
     textClass: 'text-purple-800',
     btnClass: 'bg-brand-purple hover:bg-brand-purple-hover text-white',
     badge: 'NOW ENROLLING',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a44dc1c21b1234da3fd770e.png',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a7188d8cf81b06f05f23a36.webp',
     alt: 'Young children playing musical instruments in Kindy & Beyond class',
     perfectFor: ['Instrumental Foundation', 'Confidence & Focus', 'Musical Literacy']
   }
