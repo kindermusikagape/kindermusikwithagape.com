@@ -145,7 +145,7 @@ export const STRUGGLES: Struggle[] = [
     id: 's1',
     title: 'Lacking Confidence',
     description: 'Hesitates to try new experiences.',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a717f3d38c88d1946c8e92e.webp',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71e26afcee90cf63d493b3.webp',
     alt: 'Shy child gaining confidence through music and movement',
     tag: 'Shy & Reserved'
   },
@@ -153,7 +153,7 @@ export const STRUGGLES: Struggle[] = [
     id: 's2',
     title: 'Struggling to Express Emotions',
     description: 'Finds it difficult to express feelings.',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a717f3d188345b27e3f61f3.webp',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71e26afcee90cf63d493b8.webp',
     alt: 'Child expressing feelings through musical play',
     tag: 'Emotional tantrums'
   },
@@ -161,7 +161,7 @@ export const STRUGGLES: Struggle[] = [
     id: 's3',
     title: 'Having Weak Social Skills',
     description: 'Needs more opportunities to connect with others.',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a717f38188345b27e3f445a.webp',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71e26b670a4ee783dcab8f.webp',
     alt: 'Children connecting and building social skills in Kindermusik class',
     tag: 'Hard to mix with others'
   },
@@ -169,7 +169,7 @@ export const STRUGGLES: Struggle[] = [
     id: 's4',
     title: 'Missing Quality Parent–Child Time',
     description: 'Busy schedules leave less time together.',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a717f3d38c88d1946c8e933.webp',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71e26adf32aa3e169fd9e8.webpp',
     alt: 'Parent and child bonding during music class',
     tag: 'Busy working lifestyle'
   },
@@ -177,7 +177,7 @@ export const STRUGGLES: Struggle[] = [
     id: 's5',
     title: 'Not Sure How to Support Growth',
     description: 'Looking for the right guidance to build lifelong skills.',
-    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a717f3838c88d1946c8e098.webp',
+    image: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71e26aa25930148e0ba56f.webp',
     alt: 'Children engaging in early childhood music activities',
     tag: 'Overwhelmed with options'
   }
@@ -368,8 +368,8 @@ export const OTHER_TEACHERS: Teacher[] = [
 ];
 
 export const RECOGNITION_BADGES = {
-  accredited: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a718e6f52a8368950f036fe.webp',
-  topProgram: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a718e6fcf81b06f050589f1.webp',
+  accredited: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71e26c0629193ed5b7dd34.webp',
+  topProgram: 'https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71e26afcee90cf63d493ae.webp',
 };
 
 export interface FAQItem {
