@@ -213,7 +213,7 @@ export default function App() {
             {/* Logo */}
             <div className="flex items-center">
               <img 
-                src="https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a435b4a42c4669a15e386c8.png" 
+                src="https://assets.cdn.filesafe.space/5p1FktvwhgI1cg6ZLMMv/media/6a71cebf0629193ed58ae41d.webp" 
                 alt="Kindermusik with Agape logo" 
                 className="object-contain brightness-0 invert"
                 style={{ width: '195.257px', height: '85.9826px' }}
