@@ -1575,9 +1575,9 @@ export default function App() {
                 <h3 className="font-bold text-xs uppercase tracking-wider text-emerald-100">Botani</h3>
               </div>
               <p className="text-xs text-emerald-50 leading-relaxed">
-                42A-2, Lebuh Lapangan Siber 2,<br />
-                Bandar Cyber,<br />
-                31350 Ipoh, Perak
+               <span className="whitespace-nowrap">42A-2, Lebuh Lapangan Siber 2,</span><br />
+               Bandar Cyber,<br />
+               31350 Ipoh, Perak
               </p>
             </div>
 
