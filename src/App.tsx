@@ -1409,7 +1409,7 @@ export default function App() {
     Kindermusik Classes in Ipoh:<br />
     <span className="text-brand-purple">Parents Want to Know</span>
 </h2>
-<p className="text-slate-600 text-base sm:text-[17px] md:text-lg max-w-2xl mx-auto leading-relaxed pt-1">
+<p className="text-slate-600 text-base sm:text-[17px] md:text-lg max-w-4xl mx-auto leading-relaxed pt-1">
               Choosing the right programme for your child is an important decision.<br className="hidden sm:inline" /> Here are answers to the questions parents ask us most before booking a trial class.
             </p>
           </div>
