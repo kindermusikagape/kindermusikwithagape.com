@@ -1406,9 +1406,10 @@ export default function App() {
               FREQUENTLY ASKED QUESTIONS
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold font-display text-slate-900 leading-tight tracking-tight">
-         Kindermusik Classes in Ipoh: <span className="text-brand-purple">What Parents Want to Know</span>
-          </h2>
-            <p className="text-slate-600 text-base sm:text-[17px] md:text-lg max-w-2xl mx-auto leading-relaxed pt-1">
+    Kindermusik Classes in Ipoh:<br />
+    <span className="text-brand-purple">Parents Want to Know</span>
+</h2>
+<p className="text-slate-600 text-base sm:text-[17px] md:text-lg max-w-2xl mx-auto leading-relaxed pt-1">
               Choosing the right programme for your child is an important decision.<br className="hidden sm:inline" /> Here are answers to the questions parents ask us most before booking a trial class.
             </p>
           </div>
